@@ -1,0 +1,6 @@
+01-10-2026,Food,500,Lunch
+01-10-2026,Transport,200,Bus
+02-10-2026,Food,350,Dinner
+02-10-2026,Bills,1000,Internet Bill
+03-10-2026,Food,1500,Shiwari Pulaw 
+03-10-2026,fOOD,1000,cHIPLI KABA

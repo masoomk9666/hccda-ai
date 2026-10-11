@@ -1,0 +1,7 @@
+Student name is : Saad Ali
+student age : 28Student name is : Aizaz Alam Khan
+student age : 24Student name is : kamran
+student age : 80 
+
+Student name is : israr
+student age : 25

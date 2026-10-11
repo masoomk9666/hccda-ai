@@ -1,0 +1,27 @@
+==================================================
+             SEO ORPHAN PAGE REPORT
+==================================================
+
+Sitemap:
+https://cplusoft.com/sitemap.xml
+
+Total Sitemap URLs: 330
+Total Crawled Pages: 200
+Total Pages With Internal Links: 403
+Possible Orphan Pages: 1
+
+--------------------------------------------------
+POSSIBLE ORPHAN PAGES
+--------------------------------------------------
+
+https://cplusoft.com/blog/ai-intelligent-systems/when-ai-ambitions-outspace-organizational-readiness
+
+--------------------------------------------------
+CRAWL ERRORS
+--------------------------------------------------
+
+No crawl errors.
+
+==================================================
+END OF REPORT
+==================================================
