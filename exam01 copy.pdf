@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 39,
+   "execution_count": 41,
    "id": "dd04d9d2",
    "metadata": {},
    "outputs": [
@@ -15,8 +15,9 @@
     }
    ],
    "source": [
-    "# Q1. Exploring Data\n",
-    "# Display the first 10 rows of the dataset. \n",
+    "# Q1. Student Record\n",
+    "# Create a dictionary named student containing the student's name, age, CGPA, and department. Ask the user to enter a key and display its value if the key exists. Otherwise, print \"Key Not Found\".\n",
+    "\n",
     "student = {\n",
     "    \"name\" : \"Saad Ali\",\n",
     "    \"age\" : 25,\n",
@@ -34,7 +35,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 38,
+   "execution_count": null,
    "id": "48367439",
    "metadata": {},
    "outputs": [
@@ -47,8 +48,19 @@
     }
    ],
    "source": [
-    "# Q2. Dataset Information\n",
-    "# Display the number of rows and columns in the dataset.\n",
+    "# Q2. Employee Information\n",
+    "# Create a dictionary named emp containing the following information:\n",
+    "\n",
+    "# Name: Ali\n",
+    "\n",
+    "# Position: HR\n",
+    "\n",
+    "# Salary: 50000\n",
+    "\n",
+    "# Department: IT\n",
+    "\n",
+    "# Ask the user to enter a key and display its corresponding value. If the key does not exist, print \"Invalid Key\".\n",
+    "\n",
     "emp = {\n",
     "    \"name\": \"Ali\",\n",
     "    \"position\": \"HR\",\n",
@@ -79,8 +91,9 @@
     }
    ],
    "source": [
-    "# Q3. Column Selection\n",
-    "# Display only the student_id, age, and exam_score columns.\n",
+    "# Q3. Contact Book\n",
+    "# Create a dictionary containing the names and phone numbers of three contacts: Sara, Ali, and Ahmad. Ask the user to enter a contact name. Display the phone number if the contact exists; otherwise, print \"Contact Not Found\".\n",
+    "\n",
     "contacts = {\n",
     "    \"Sara\": \"03001234567\",\n",
     "    \"Ali\": \"03111234567\",\n",
@@ -110,7 +123,17 @@
     }
    ],
    "source": [
-    "# Question 4\n",
+    "# Q4. Nested Student Dictionary\n",
+    "# Create a nested dictionary named students containing the following records:\n",
+    "\n",
+    "# Ali: Age 21, CGPA 3.7, Department CS\n",
+    "\n",
+    "# Ahmad: Age 22, CGPA 3.4, Department AI\n",
+    "\n",
+    "# Sara: Age 20, CGPA 3.9, Department SE\n",
+    "\n",
+    "# Ask the user to enter a student's name and display their complete record. If the student does not exist, print \"Student Not Found\".\n",
+    "\n",
     "students = {\n",
     "    \"Ali\": {\n",
     "        \"age\": 21,\n",
@@ -155,7 +178,24 @@
     }
    ],
    "source": [
-    "# Question 5\n",
+    "# Q5. Dictionary Methods\n",
+    "# Consider the following dictionary:\n",
+    "# python\n",
+    "# student = {\n",
+    "#     \"name\": \"Ali\",\n",
+    "#     \"age\": 23,\n",
+    "#     \"department\": \"CS\"\n",
+    "# }\n",
+    "# Write code to:\n",
+    "\n",
+    "# Display all keys.\n",
+    "\n",
+    "# Display all values.\n",
+    "\n",
+    "# Display all key-value pairs.\n",
+    "\n",
+    "# Add a new key \"cgpa\" with the value 3.5 using update().\n",
+    "\n",
     "student = {\n",
     "    \"name\": \"Ali\",\n",
     "    \"age\": 23,\n",
@@ -179,7 +219,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": null,
    "id": "809a8eed",
    "metadata": {},
    "outputs": [
@@ -192,7 +232,23 @@
     }
    ],
    "source": [
-    "# Question 6\n",
+    "# Q6. Online Shopping System\n",
+    "# Create a nested dictionary named products containing the following products:\n",
+    "\n",
+    "# Laptop: Price 120000, Quantity 5\n",
+    "\n",
+    "# Mouse: Price 1500, Quantity 10\n",
+    "\n",
+    "# Keyboard: Price 3000, Quantity 0\n",
+    "\n",
+    "# Ask the user to enter a product name.\n",
+    "\n",
+    "# If the product exists and its quantity is greater than 0, print \"Product Added to Cart\".\n",
+    "\n",
+    "# If the quantity is 0, print \"Out of Stock\".\n",
+    "\n",
+    "# If the product does not exist, print \"Product Not Found\".\n",
+    "\n",
     "products = {\n",
     "    \"Laptop\": {\n",
     "        \"price\": 120000,\n",
@@ -221,7 +277,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": null,
    "id": "970ad10f",
    "metadata": {},
    "outputs": [
@@ -526,7 +582,9 @@
     }
    ],
    "source": [
-    "# Pandas Question 1\n",
+    "# Q1. Exploring Data\n",
+    "# Display the first 10 rows of the dataset.\n",
+    "\n",
     "import pandas as pd\n",
     "\n",
     "df = pd.read_csv(\"Student_data_clean.csv\")\n",
@@ -549,14 +607,16 @@
     }
    ],
    "source": [
-    "# Question 2\n",
+    "# Q2. Dataset Information\n",
+    "# Display the number of rows and columns in the dataset.\n",
+    "\n",
     "print(\"Number of rows:\", df.shape[0])\n",
     "print(\"Number of columns:\", df.shape[1])"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": null,
    "id": "f7e72c06",
    "metadata": {},
    "outputs": [
@@ -681,13 +741,15 @@
     }
    ],
    "source": [
-    "# question 3\n",
+    "# Q3. Column Selection\n",
+    "# Display only the student_id, age, and exam_score columns.\n",
+    "\n",
     "df[['student_id', 'age', 'exam_score']]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 17,
+   "execution_count": null,
    "id": "77b9b9ce",
    "metadata": {},
    "outputs": [
@@ -720,13 +782,15 @@
     }
    ],
    "source": [
-    "# Question 4\n",
+    "# Q4. Missing Values\n",
+    "# Find the number of missing values in each column.\n",
+    "\n",
     "df.isnull().sum()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": null,
    "id": "99758888",
    "metadata": {},
    "outputs": [
@@ -1071,7 +1135,9 @@
     }
    ],
    "source": [
-    "# Question 5\n",
+    "# Q5. Data Cleaning\n",
+    "# Remove duplicate rows from the dataset and store the cleaned result in a new DataFrame.\n",
+    "\n",
     "df_cleaned = df.drop_duplicates()\n",
     "\n",
     "df_cleaned"
@@ -1079,7 +1145,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": null,
    "id": "863e9663",
    "metadata": {},
    "outputs": [
@@ -1112,7 +1178,9 @@
     }
    ],
    "source": [
-    "# Question no 6\n",
+    "# Q6. Handling Missing Values\n",
+    "# Fill missing values in the sleep_hours column with its median.\n",
+    "\n",
     "df['sleep_hours'] = df['sleep_hours'].fillna(\n",
     "    df['sleep_hours'].median()\n",
     ")\n",
@@ -1121,7 +1189,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": null,
    "id": "3afdc6f8",
    "metadata": {},
    "outputs": [
@@ -1134,7 +1202,9 @@
     }
    ],
    "source": [
-    "# Question 7\n",
+    "# Q7. Data Type Conversion\n",
+    "# Convert the study_hours_per_day column to numeric values. Handle invalid values appropriately.\n",
+    "\n",
     "df['study_hours_per_day'] = pd.to_numeric(\n",
     "    df['study_hours_per_day'],\n",
     "    errors='coerce'\n",
@@ -1144,7 +1214,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
+   "execution_count": null,
    "id": "b651e9d1",
    "metadata": {},
    "outputs": [
@@ -1489,13 +1559,15 @@
     }
    ],
    "source": [
-    "# Question no 8\n",
+    "# Q8. Filtering Rows\n",
+    "# Display all students whose exam_score is greater than 80.\n",
+    "\n",
     "df[df['exam_score'] > 80]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": null,
    "id": "1db2591b",
    "metadata": {},
    "outputs": [
@@ -2537,7 +2609,9 @@
     }
    ],
    "source": [
-    "# Question NO 9\n",
+    "# Q9. Multiple Conditions\n",
+    "# Display students who study more than 5 hours per day and sleep for at least 7 hours.\n",
+    "\n",
     "df[\n",
     "    (df['study_hours_per_day'] > 5) &\n",
     "    (df['sleep_hours'] >= 7)\n",
@@ -2546,7 +2620,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": null,
    "id": "b16e6e0b",
    "metadata": {},
    "outputs": [
@@ -2891,13 +2965,15 @@
     }
    ],
    "source": [
-    "# Question no 10\n",
+    "# Q10. Using isin()\n",
+    "# Display students whose internet_quality is either Good or Average.\n",
+    "\n",
     "df[df['internet_quality'].isin(['Good', 'Average'])]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
+   "execution_count": null,
    "id": "e4f2c7d1",
    "metadata": {},
    "outputs": [
@@ -3214,7 +3290,9 @@
     }
    ],
    "source": [
-    "# question no 11\n",
+    "# Q11. Sorting Data\n",
+    "# Sort the dataset by exam_score in descending order and display the first 10 rows.\n",
+    "\n",
     "df.sort_values(\n",
     "    by='exam_score',\n",
     "    ascending=False\n",
@@ -3223,7 +3301,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": null,
    "id": "9c8aff3a",
    "metadata": {},
    "outputs": [
@@ -3303,7 +3381,9 @@
     }
    ],
    "source": [
-    "# question 12\n",
+    "# Q12. Finding Top Students\n",
+    "# Display the top 5 students with the highest exam scores. Show their student_id, study_hours_per_day, and exam_score.\n",
+    "\n",
     "df.nlargest(5, 'exam_score')[\n",
     "    ['student_id', 'study_hours_per_day', 'exam_score']\n",
     "]"
@@ -3311,7 +3391,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": null,
    "id": "cd370f9a",
    "metadata": {},
    "outputs": [
@@ -3436,7 +3516,9 @@
     }
    ],
    "source": [
-    "# Question 13\n",
+    "# Q13. Creating a New Column\n",
+    "# Create a new column named total_screen_time by adding social_media_hours and netflix_hours.\n",
+    "\n",
     "df['total_screen_time'] = (\n",
     "    df['social_media_hours'] + df['netflix_hours']\n",
     ")\n",
@@ -3559,7 +3641,21 @@
     }
    ],
    "source": [
-    "# question 14\n",
+    "# Q14. Applying a Function\n",
+    "# Create a function that assigns grades using the following rules:\n",
+    "\n",
+    "# Score 85 or above: A\n",
+    "\n",
+    "# Score 70 to below 85: B\n",
+    "\n",
+    "# Score 55 to below 70: C\n",
+    "\n",
+    "# Score 40 to below 55: D\n",
+    "\n",
+    "# Score below 40: F\n",
+    "\n",
+    "# Apply this function to the exam_score column and store the results in a new column named grade.\n",
+    "\n",
     "def assign_grade(score):\n",
     "    if score >= 85:\n",
     "        return 'A'\n",
@@ -3580,7 +3676,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 35,
+   "execution_count": null,
    "id": "bc6c12cd",
    "metadata": {},
    "outputs": [
@@ -3693,7 +3789,19 @@
     }
    ],
    "source": [
-    "# question 15\n",
+    "# Q15. Creating Categories with pd.cut()\n",
+    "# Create a new column named age_group using the following age intervals:\n",
+    "\n",
+    "# 15–18: 15-18\n",
+    "\n",
+    "# Above 18 to 21: 19-21\n",
+    "\n",
+    "# Above 21 to 24: 22-24\n",
+    "\n",
+    "# Above 24 to 35: 25+\n",
+    "\n",
+    "# Use pd.cut() to assign the appropriate category to each student.\n",
+    "\n",
     "df['age_group'] = pd.cut(\n",
     "    df['age'],\n",
     "    bins=[15, 18, 21, 24, 35],\n",
